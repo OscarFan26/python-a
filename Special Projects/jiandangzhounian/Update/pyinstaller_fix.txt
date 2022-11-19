@@ -1,0 +1,19 @@
+How to fix pyinstaller -- RuntimeError:
+
+
+
+    Step 1 - use command `pyinstaller main.py` to get a spec file.
+             If you want an exe with no console, re-edit file with 'xxx.pyw'
+
+    Step 2 - delete directories `dist` and `build`, then modify the spec file (accordingly) -->
+             '''
+             ...
+             ...
+             ...
+
+         ==>  face_models = [...]
+             '''
+    Step 3 - use command `pyinstaller main. spec` waiting...
+
+    Step 4 - It's ok. Now check you `dist` > `main` >  `main.exe`
+
