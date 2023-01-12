@@ -21,11 +21,9 @@ var = tk.StringVar()
 var.set('____' * 5)
 
 
-# defs
-
 def button_about():
     mb.showinfo(title='ABOUT.',
-                message='建党100周年修图小程序\n\nMade by Oscar.\t制作人：樊卓润\n\rVersion:1.1.2\t版本：1.1.2')
+                message='建党100周年修图小程序\n\nMade by Oscar.\t制作人:樊卓润\n\rVersion:1.1.2\t版本:1.1.2')
 
 
 def button_save():
@@ -99,9 +97,6 @@ def button_how_to_use():
     how_window.geometry('700x375+100+100')
     how_window.title('我应该如何使用？')
     how_window.resizable(0, 0)
-    # widget
-    how_to_use_message = tk.Message(how_window, text=txt_to_use, width=1000,
-                                    font=('楷体', 14))
     how_to_use_message.place(x=20, y=10)
     button_exit_how = tk.Button(how_window, text='退出此窗口', width=12, height=1,
                                 command=how_window.destroy)
